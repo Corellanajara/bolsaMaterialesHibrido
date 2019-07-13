@@ -6,7 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  private Titulo = "hola mundo";
+  private Titulo2 = "otro mensaje";
+  private flag = true;
   constructor() {}
 
 }

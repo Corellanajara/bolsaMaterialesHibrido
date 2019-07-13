@@ -1,8 +1,8 @@
 {
   "name": "hibrido",
   "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "https://ionicframework.com/",
+  "author": "ATARAXIA",
+  "homepage": "https://ataraxia.cl/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -55,5 +55,5 @@
     "tslint": "~5.17.0",
     "typescript": "~3.1.6"
   },
-  "description": "An Ionic project"
+  "description": "Bolsa de materiales, (pendiente mejor descripción)"
 }

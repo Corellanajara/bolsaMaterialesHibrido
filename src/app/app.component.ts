@@ -16,13 +16,13 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: 'List',
+      title: 'Listar',
       url: '/list',
       icon: 'list'
     },{
-      title: 'Ofertas',
+      title: 'Mis Ofertas',
       url: '/ofertas',
-      icon: 'shop'
+      icon: 'analytics'
     }
   ];
 
@@ -33,7 +33,7 @@ export class AppComponent {
   ) {
     this.initializeApp();
   }
-  
+
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
