@@ -3,11 +3,41 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>ofertas</ion-title>
+    <ion-buttons slot="end">
+       <ion-icon slot="end" name="notifications"></ion-icon>
+       <ion-badge color="success">3</ion-badge>
+    </ion-buttons>
+    <ion-title>Bolsa de Materiales</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <h2>Soy el menu de ofertas</h2>
-  Desplegar las ofertas de la persona, el dashboard de ofertas , maybe en una tablita
+  <ion-button size="block" color="success" (click)="presentModal()" >Generar Nuevo</ion-button>
+
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content
+      pullingIcon="arrow-dropdown"
+      pullingText="Baja para actualizar"
+      refreshingSpinner="circles"
+      refreshingText="Actualizando...">
+    </ion-refresher-content>
+  </ion-refresher>
+  <ion-list>
+    <ion-list-header>
+      Mis ofertas
+    </ion-list-header>
+
+    <ion-item *ngFor="let item of items">
+      <ion-avatar slot="start">
+        <img src="https://i0.wp.com/www.winhelponline.com/blog/wp-content/uploads/2017/12/user.png?fit=256%2C256&quality=100&ssl=1">
+      </ion-avatar>
+      <ion-label>
+        <h2>{{item.titulo}}</h2>
+        <h3>{{item.subtitulo}}</h3>
+        <p>{{item.descripcion}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+
 </ion-content>

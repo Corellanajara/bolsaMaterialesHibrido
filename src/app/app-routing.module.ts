@@ -21,6 +21,7 @@ const routes: Routes = [
     path: 'ofertas',
     loadChildren: './ofertas/ofertas.module#OfertasPageModule'
   },
+  { path: 'crear', loadChildren: './ofertas/crear/crear.module#CrearPageModule' },
   
 ];
 
